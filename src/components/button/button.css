@@ -1,0 +1,21 @@
+button {
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-family: montserrat;
+    color: whitesmoke;
+    border: none;
+    font-size: 18px;
+}
+
+.hero-button {
+    background: transparent;
+    backdrop-filter: blur(25px);
+    border: solid 2px whitesmoke;
+}
+
+.alert-button {
+    background: #EA2B1F;
+    margin: 15px auto;
+}
+

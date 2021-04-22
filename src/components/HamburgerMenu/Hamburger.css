@@ -1,0 +1,55 @@
+.menu-button {
+    position: absolute;
+    top: 15px; right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    z-index: 11;
+}
+
+.menu-button .bar {
+    width: 100%;
+    height: 3px;
+    background: whitesmoke;
+    z-index: 2;
+    border-radius: 5px;
+    margin: 2px 0;
+    transition: all .25s ease-in-out;
+}
+
+.menu-button-inactive {
+    transition: .25s
+}
+
+.menu-button-active .bar:nth-child(2) {
+    transition: .25s;
+    width: 0px;
+}
+
+.menu-button-active .bar:nth-child(1) {
+    transition: .25s ease-in-out;
+    transition-delay: .35s;
+    transform: translateY(7px);
+}
+
+.menu-button-active .bar:nth-child(3) {
+    transition: .25s ease-in-out;
+    transition-delay: .35s;
+    transform: translateY(-7px) rotate(90deg);
+}
+
+.menu-button-active {
+    transition: .25s ease-in-out;
+    transition-delay: .65s;
+    transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-button {
+        top: 35px; right: 35px;
+    }
+}
