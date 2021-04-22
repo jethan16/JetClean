@@ -50,6 +50,10 @@
         flex-direction: column-reverse;
     }
 
+    .divider {
+        transform: rotate(90deg);
+    }
+
 }
 
 @media only screen 
@@ -68,5 +72,5 @@
     and (min-device-width: 425px)
     and (max-device-width: 904px) 
     and (orientation: landscape) {
-        
+
     }
