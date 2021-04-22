@@ -114,4 +114,20 @@
     }
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .services-splash {
+        padding: 50px 150px;
+    }
+
+    .services-path {
+        height: 160vh;
+    }
+
+}
+
 

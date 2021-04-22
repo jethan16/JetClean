@@ -127,6 +127,41 @@ h2 {
     }
 }
 
+/* */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .hero {
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .hero-text {
+        width: 50%;
+    }
+
+    .hero-image {
+        background-position-y: -500px;
+    }
+
+}
+
+
+@media only screen 
+    and (min-device-width: 425px)
+    and (max-device-width: 904px) 
+    and (orientation: landscape) {
+
+        .hero {
+            height: 100vh
+        }
+
+}
+
 @media only screen and (min-width: 768px) {
 
     .hero {
