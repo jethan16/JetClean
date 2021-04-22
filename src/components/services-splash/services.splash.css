@@ -1,3 +1,11 @@
+/* DESKTOP SPLASH DISPLAY */
+
+.services-splash-desktop {
+    display: none;
+}
+
+/*  */
+
 .services-splash {
     display: flex;
     flex-direction: column;
@@ -47,46 +55,41 @@
     }
 }
 
+/* ALTERNATIVE SPLASH DISPLAY */
+
 @media only screen and (min-width: 768px) {
     .services-splash {
         display: none;
     }
 
-    .services-title {
-        padding: 0;
-        order: 2;
-        width: 100%;
-        height: 50%;
-        border: solid 1px black;
+    .services-splash-desktop {
+        display: flex;
+        padding: 50px 20px;
     }
 
-    .services-splash h1, .services-splash h2 {
+    .services-title-desktop {
+        width: 45%;
+        margin-left: 20px;
+    }
+
+    .services-title-desktop h1, .services-title-desktop h2 {
         color: #2A2828;
-        width: 100%;
-        margin: 0 auto;
-        margin-left: 10px;
-    }
+    } 
 
-    .services-splash h2 {
-        text-align: center;
-        margin-left: 0;
-        margin-top: 25px;
-    }
-
-    .services-splash button {
-        order: 3;
-        height: 50%;
-    }
-
-    .services-path {
-        flex-direction: row;
-        width: 100%;
+    .services-title-desktop h1 {
+        font-size: 25px;
         margin: 0;
-        padding: 0;
-        margin-bottom: 25px;
-        background: url('../../images/Dashed-line-straight.png');
-        background-size: contain;
-        order: 1;
+    }
+
+    .services-title-desktop h2 {
+        margin: 25px 0 5px 0;
+        font-size: 18px;
+    }
+
+    .services-path-desktop {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
 }
@@ -114,6 +117,8 @@
     }
 }
 
+/* LANDSCAPE ORIENTATIONS */
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -129,5 +134,7 @@
     }
 
 }
+
+/*  */
 
 

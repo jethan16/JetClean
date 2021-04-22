@@ -127,7 +127,7 @@ h2 {
     }
 }
 
-/* */
+/* LANDSCAPE ORIENTATIONS */
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -186,6 +186,8 @@ h2 {
         transform: scale(1.5);
     }
 }
+
+/* */
 
 @media only screen and (min-width: 1024px) {
     .hero-image {
