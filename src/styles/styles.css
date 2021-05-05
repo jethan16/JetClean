@@ -42,6 +42,10 @@ h2 {
     margin-top: 50px;
 }
 
+.text-align-left {
+    text-align: left;
+}
+
 /* Hero */
 
 .hero {

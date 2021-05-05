@@ -32,7 +32,7 @@ const IndexPage = ({data}) => {
         </section>
       </main>
       <ServicesSplash cmsContent={data.datoCmsServicesContent}/>
-      <About />
+      <About cmsContent={data.datoCmsAboutContent}/>
     </>
   )
 }
@@ -51,6 +51,12 @@ export const query = graphql`
     datoCmsServicesContent {
       servicesSplashSubtitle
       servicesSplashTitle
+    }
+    datoCmsAboutContent {
+      aboutBody1
+      aboutBody2
+      aboutBody3
+      aboutTitle
     }
   }
 `

@@ -1,27 +1,32 @@
-.services-splash-dekstop {
+.display-none {
     display: none;
 }
 
-.services-splash-mobile {
+.section-wrapper {
+    padding: 50px;
+    position: relative;
+}
+
+.section-wrapper-mobile {
     display: flex;
     flex-direction: column;
     padding: 50px;
 }
 
-.services-title {
+.section-title {
     padding: 25px 0;
     width: 90%;
     margin: 0px auto;
     text-align: center;
 }
 
-.services-title h1 {
+.secondary-header {
     margin: 0;
     font-size: 23px;
     color: #2a2828;
 }
 
-.services-title h2 {
+.section-title h2 {
     color: #2a2828;
     margin-top: 15px;
 }
@@ -34,7 +39,7 @@
 }
 
 @media only screen and (min-width: 425px) {
-    .services-title{
+    .section-title{
         width: 75%;
     }
         
@@ -42,11 +47,11 @@
 
 @media only screen and (min-width: 768px) {
 
-    .services-splash-mobile {
+    .section-wrapper-mobile {
         display: none;
     }
 
-    .services-splash-dekstop {
+    .section-wrapper {
         display: flex;
         justify-content: space-evenly;
         padding: 15px;
@@ -61,18 +66,17 @@
         width: 65%;
     }
 
-    .services-title {
+    .section-title {
         width: 29%;
         margin: 0;
-        margin-left: auto;
         text-align: left;
     }
 
-    .services-title h1 {
+    .secondary-header {
         font-size: 23px;
     }
 
-    .services-title h2 {
+    .section-title h2 {
         font-size: 18px;
         margin-bottom: 15px;
     }
@@ -86,11 +90,11 @@
 
     }
 
-    .services-splash-dekstop {
+    .section-wrapper {
         padding: 25px;
     }
 
-    .services-title {
+    .section-title {
         width: 22%;
         margin-left: 35px;
     }
@@ -99,26 +103,26 @@
 
 @media only screen and (min-width: 1440px) {
     
-    .services-splash-dekstop {
+    .section-wrapper {
         padding: 50px;
     }
     
-    .services-title h1 {
+    .secondary-header {
         font-size: 28px;
     }
 
-    .services-title h2 {
+    .section-title h2 {
         font-size: 20px;
     }
 }
 
 @media only screen and (min-width: 1720px) {
-    .services-splash-dekstop {
+    .section-wrapper {
         padding: 50px 100px;
         justify-content: center;
     }
 
-    .services-title {
+    .section-title {
        width: 20%;
        padding: 20px 0;
        display: flex;
@@ -131,18 +135,18 @@
        margin-right: 15px;
     }
 
-    .services-title h1 {
+    .secondary-header {
         font-size: 35px;
     }
 
-    .services-title h2 {
+    .section-title h2 {
         font-size: 23px;
         margin: 0;
     }
 }
 
 @media only screen and (min-width: 1800px) {
-    .services-title {
+    .section-title {
         width: 15%;
     }
 }
