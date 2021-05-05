@@ -8,27 +8,27 @@ import "../../utils/fontawesome"
 const servicesSplash = (props) => {
     return(
         <>
-        {/* MOBILE DOM */}
-            <section className='services-splash'>
+        {/* MOBILE DOM ELEMENT */}
+            <section className='services-splash-mobile'>
                 <div className='services-title'>
                     <h1>{props.cmsContent.servicesSplashTitle}</h1>
                     <h2>{props.cmsContent.servicesSplashSubtitle}</h2>
                 </div>
-                <div className='services-path'>
+                <div className='services-items'>
                     <ServicesToken text='Restore' icon={'leaf'} id={'token-1'}/>
                     <ServicesToken text='Protect' icon={'shield-alt'} id={'token-2'}/>
                     <ServicesToken text='Complete' icon={'check'} id={'token-3'}/>
                 </div>
                 <Button buttonStyle='alert-button' buttonText='See Our Services'/>
             </section>
-            {/* DESKTOP DOM */}
-            <section className='services-splash-desktop'>
-                <div className='services-path-desktop'>
+            {/* DESKTOP DOM ELEMENT */}
+            <section className='services-splash-dekstop'>
+                <div className='services-items'>
                     <ServicesToken text='Restore' icon={'leaf'} id={'token-1'}/>
                     <ServicesToken text='Protect' icon={'shield-alt'} id={'token-2'}/>
                     <ServicesToken text='Complete' icon={'check'} id={'token-3'}/>
                 </div>
-                <div className='services-title-desktop'>
+                <div className='services-title'>
                     <h1>{props.cmsContent.servicesSplashTitle}</h1>
                     <h2>{props.cmsContent.servicesSplashSubtitle}</h2>
                     <Button buttonStyle='alert-button' buttonText='See Our Services'/>

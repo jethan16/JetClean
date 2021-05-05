@@ -1,121 +1,146 @@
-/* DESKTOP SPLASH DISPLAY */
-
-.services-splash-desktop {
+.services-splash-dekstop {
     display: none;
 }
 
-/*  */
-
-.services-splash {
+.services-splash-mobile {
     display: flex;
     flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 50px 30px;
-}
-
-.services-path {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url('../../images/dashed-line-mobile.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 90vh;
-    margin: 15px 0;
-}
-
-.services-splash h1, .services-splash h2 {
-    color: #2A2828;
-    width: 78%;
-    margin: 0 auto;
-}
-
-.services-splash h1 {
-    font-size: 25px;
-}
-
-.services-splash h2 {
-    font-size: 20px;
-    width: 78%;
-    margin-top: 15px; 
+    padding: 50px;
 }
 
 .services-title {
-    margin-left: 15px;
+    padding: 25px 0;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.services-title h1 {
+    margin: 0;
+    font-size: 23px;
+    color: #2a2828;
+}
+
+.services-title h2 {
+    color: #2a2828;
+    margin-top: 15px;
+}
+
+.services-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
 }
 
 @media only screen and (min-width: 425px) {
-    .services-splash h1, .services-splash h2 {
-        width: 70%;
-        margin-left: 60px;
+    .services-title{
+        width: 75%;
     }
+        
 }
 
-/* ALTERNATIVE SPLASH DISPLAY */
-
 @media only screen and (min-width: 768px) {
-    .services-splash {
+
+    .services-splash-mobile {
         display: none;
     }
 
-    .services-splash-desktop {
+    .services-splash-dekstop {
         display: flex;
-        padding: 75px 20px;
+        justify-content: space-evenly;
+        padding: 15px;
     }
 
-    .services-title-desktop {
-        width: 45%;
-        margin-left: 50px;
+    .services-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        width: 65%;
     }
 
-    .services-title-desktop h1, .services-title-desktop h2 {
-        color: #2A2828;
-    } 
-
-    .services-title-desktop h1 {
-        font-size: 25px;
+    .services-title {
+        width: 29%;
         margin: 0;
+        margin-left: auto;
+        text-align: left;
     }
 
-    .services-title-desktop h2 {
-        margin: 25px 0 5px 0;
+    .services-title h1 {
+        font-size: 23px;
+    }
+
+    .services-title h2 {
         font-size: 18px;
+        margin-bottom: 15px;
     }
-
-    .services-path-desktop {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
 }
 
 @media only screen and (min-width: 1024px) {
-    .services-path {
-        order: 1;
-        flex-direction: row;
-        background: url('../../images/dashed-line.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 50%;
+
+    .services-items {
+        width: 70%;
+        justify-content: space-between;
+
     }
 
-    .services-splash {
-        flex-direction: row;
+    .services-splash-dekstop {
+        padding: 25px;
     }
 
-    .services-splash h1, .services-splash h2 {
-        order: 3;
+    .services-title {
+        width: 22%;
+        margin-left: 35px;
     }
 
-    .services-splash button {
-        order: 2;
+}
+
+@media only screen and (min-width: 1440px) {
+    
+    .services-splash-dekstop {
+        padding: 75px 50px;
+    }
+    
+    .services-title h1 {
+        font-size: 28px;
+    }
+
+    .services-title h2 {
+        font-size: 20px;
     }
 }
+
+@media only screen and (min-width: 1720px) {
+    .services-splash-dekstop {
+        padding: 50px 100px;
+        justify-content: center;
+    }
+
+    .services-title {
+       width: 20%;
+       padding: 20px 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+
+    .services-items {
+       width: 50%;
+       margin-right: 15px;
+    }
+
+    .services-title h1 {
+        font-size: 35px;
+    }
+
+    .services-title h2 {
+        font-size: 23px;
+        margin: 0;
+    }
+}
+
 
 /* LANDSCAPE ORIENTATIONS */
 
@@ -125,13 +150,7 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
 
-    .services-splash {
-        padding: 50px 150px;
-    }
 
-    .services-path {
-        height: 160vh;
-    }
 
 }
 
