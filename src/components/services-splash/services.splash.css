@@ -100,7 +100,7 @@
 @media only screen and (min-width: 1440px) {
     
     .services-splash-dekstop {
-        padding: 75px 50px;
+        padding: 50px;
     }
     
     .services-title h1 {
@@ -138,6 +138,12 @@
     .services-title h2 {
         font-size: 23px;
         margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .services-title {
+        width: 15%;
     }
 }
 

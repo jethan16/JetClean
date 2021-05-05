@@ -233,6 +233,21 @@ h2 {
     }
 }
 
+@media only screen and (min-width: 1800px) {
+    .hero-text {
+        margin-left: 325px;
+        width: 33%;
+    }
+
+    .hero h2 {
+        width: 90%;
+    }
+
+    .hero-image {
+        background-position: -30px -450px;
+    }
+}
+
 
 /* LANDSCAPE ORIENTATIONS */
 

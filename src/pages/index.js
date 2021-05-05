@@ -4,6 +4,7 @@ import "../styles/styles.css"
 import Button from "../components/button/button"
 import MenuBars from "../components/HamburgerMenu/hamburger"
 import ServicesSplash from "../components/services-splash/services-splash"
+import About from "../components/about/about"
 
 // NOTE: ALL FUNCTIONALITY ABSTRACTED INTO COMPONENT FILE
 
@@ -31,6 +32,7 @@ const IndexPage = ({data}) => {
         </section>
       </main>
       <ServicesSplash cmsContent={data.datoCmsServicesContent}/>
+      <About />
     </>
   )
 }
