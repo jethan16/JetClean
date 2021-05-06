@@ -18,6 +18,13 @@ const About = (props) => {
             <div className='image-wrapper'>
                 <img src={truck}></img>
             </div>
+            <div className='logo-wrapper'>
+                <div className='logo'></div>
+                <div className='logo'></div>
+                <div className='logo'></div>
+                <div className='logo'></div>
+                <div className='logo'></div>
+            </div>
             <div className='about-background-container'>
                 <div className='about-background-upper'></div>
                 <div className='about-background-lower'></div>
